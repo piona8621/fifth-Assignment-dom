@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- TailWindCss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-yellow-50">
+      <nav
+        class="p-4 flex gap-3 md:flex md:justify-between md:items-center md:py-4 md:w-10/12 mx-auto"
+      >
+        <!-- !Blog Button -->
+        <button
+          id="btn-blog"
+          class="bg-lime-300 px-5 py-2 rounded-lg font-semibold hidden"
+        >
+          Blog
+        </button>
+
+        <!-- !home button -->
+        <button
+          id="btn-home"
+          class="bg-lime-300 px-5 py-2 rounded-lg font-semibold"
+        >
+          Home
+        </button>
+        <!-- !Donate Logo -->
+        <span class="flex items-center my-2 md:my-0 font-semibold"
+          ><img class="mr-3 w-10" src="./assets/logo.png" alt="" />
+          Donate Bangladesh
+        </span>
+        <!-- !Account Balance -->
+        <span class="flex items-center"
+          ><img class="mr-3 w-10" src="./assets/coin.png" alt="" />
+          <!-- !main Balance -->
+          <span id="main-balance">50000</span> <span class="ml-2"> BDT</span>
+        </span>
+      </nav>
+    </header>
+    <br />
+    <h1 class="text-center font-bold text-6xl">FAQ</h1>
+    <br />
+    <!-- !FAQ Section Starts -->
+    <section class="m-4 md:m-0 md:w-9/12 md:mx-auto">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          1. What is the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface that allows scripts and programs to dynamically access and update the content, structure, and style of a document, usually HTML or XML. Here's a breakdown of its key aspects:
+
+Structure Representation: The DOM represents the document as a tree structure where each node corresponds to a part of the document (like elements, attributes, and text).
+
+Interactivity: It allows developers to interact with the document using programming languages like JavaScript. This means you can add, delete, or modify elements and their properties dynamically.
+
+Event Handling: The DOM supports events (like clicks, keyboard input, etc.), allowing developers to define how the document responds to user actions.
+
+Browser Integration: Modern web browsers implement the DOM, enabling developers to manipulate web pages interactively and responsively.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          2. How is the DOM different from HTML?
+        </div>
+        <div class="collapse-content">
+          <p>
+            HTML is a markup language used to define the static structure and content of a web page, while the DOM is a dynamic representation of that structure as a tree of objects that can be manipulated by scripts like JavaScript. Essentially, HTML provides the initial content, and the DOM allows for real-time modifications.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          3. What are DOM elements and nodes?
+        </div>
+        <div class="collapse-content">
+          <p>
+            DOM elements represent HTML tags (like div, p, a), while DOM nodes
+            are the general term for all items in the DOM tree, which includes
+            elements, text, attributes, and comments. Every element is a node,
+            but not every node is an element.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          4.What is event delegation in the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique in JavaScript where you add a single
+            event listener to a parent element instead of adding listeners to
+            individual child elements. The event listener can capture events
+            from child elements due to event bubbling. This improves performance
+            when dealing with large numbers of elements.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="/root.js"></script>
+    <!-- <script src="/main.js"></script> -->
+     <script src="js/blog.js"></script>
+  </body>
+</html>
